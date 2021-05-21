@@ -1,0 +1,24 @@
+{
+  "name": "js-socket-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:server-server": "node server-server/server.js",
+    "start:server-client": "node server-client/websocket-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yash-Singh1/js-socket-examples.git"
+  },
+  "keywords": [],
+  "author": "Yash Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yash-Singh1/js-socket-examples/issues"
+  },
+  "homepage": "https://github.com/Yash-Singh1/js-socket-examples#readme",
+  "dependencies": {
+    "websocket": "^1.0.34"
+  }
+}
