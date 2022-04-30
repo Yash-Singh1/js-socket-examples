@@ -5,19 +5,7 @@
   </head>
   <body>
     <textarea id="textarea"></textarea>
-    <button onclick="ws.send(document.getElementById('textarea').value)">Send</button>
+    <button>Send</button>
+    <script src="client.js"></script>
   </body>
-  <script>
-    const ws = new WebSocket('ws://localhost:9898/');
-    ws.onopen = function () {
-      console.log('WebSocket Client Connected');
-      ws.send('Hi this is web client.');
-    };
-    ws.onmessage = function (e) {
-      console.log("Received: '" + e.data + "'");
-    };
-    ws.onclose = function () {
-      console.log('Server disconnected');
-    };
-  </script>
 </html>
